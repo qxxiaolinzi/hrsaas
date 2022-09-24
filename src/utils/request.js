@@ -3,7 +3,7 @@ import axios from 'axios'
 // 通过axios 创建axios 实例
 
 const service = axios.create({
-  baseUrl: '/dev', // 基准地址
+  baseURL: process.env.VUE_APP_BASE_API, // 基准地址 // prod-api
   timeout: 5000
 })
 
