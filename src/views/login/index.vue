@@ -82,7 +82,7 @@ export default {
         await this.$refs.loginForm.validate()
         this.loading = true
         await this.$store.dispatch('user/loginAction', this.loginForm)
-        this.$router.push('/dashboard')
+        this.$router.push('/')
       } finally {
         this.loading = false
       }
